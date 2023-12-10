@@ -14,7 +14,7 @@ const dbCloud = `mongodb+srv://${dbUsername}:${dbPassword}@${cluster}/${dbName}?
 
 const local = "mongodb://localhost:27017/Cyno";
 
-
+ 
 export const ConnectToDb = async () => {
   try {
     const db = await mongoose.connect(dbCloud);
